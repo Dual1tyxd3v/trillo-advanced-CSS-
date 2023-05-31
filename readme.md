@@ -1,0 +1,1 @@
+Учебный проект "Trillo" из курса <b>Advanced CSS and Sass - Flexbox, Grid, Animations and More (Jonas Schmedtmann)</b>
