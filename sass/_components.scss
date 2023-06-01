@@ -102,3 +102,29 @@
   }
 }
 // 
+// SIDE-NAV
+.side-nav {
+  list-style: none;
+
+  &__link {
+
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+//
+// LEGAL
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-light-4);
+}
+// 
