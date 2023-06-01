@@ -174,14 +174,26 @@
 
   &__img {
     width: 100%;
+    display: block;
   }
 }
 // 
 // OVERVIEW
 .overview {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
 
-  &__icon {
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+  }
+
+  &__icon-star,
+  &__icon-location {
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
@@ -189,6 +201,57 @@
 
   &__stars {
     margin-right: auto;
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+  }
+
+  &__icon-location {
+    margin-right: .5rem;
+  }
+
+  &__ratings {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0 2.25rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__rating {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
+  }
+
+  &__value {
+    font-size: .8rem;
+  }
+}
+// 
+// BUTTON-INLINE
+.button-inline {
+  font-size: inherit;
+  color: var(--color-primary);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    animation: pulsate 1s infinite;
   }
 }
 // 
