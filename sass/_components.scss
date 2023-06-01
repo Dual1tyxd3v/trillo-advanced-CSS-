@@ -1,7 +1,7 @@
 // Logo
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 // 
 // SEARCH
@@ -21,7 +21,7 @@
     padding: .7rem 2rem;
     transition: all .2s;
     margin-right: -3.25rem;
-    
+
     &:focus {
       width: 100%;
       background-color: var(--color-grey-light-3);
@@ -56,15 +56,49 @@
 // 
 // USER-NAV
 .user-nav {
+  display: flex;
+  align-self: stretch;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: var(--color-grey-light-2);
+    }
+  }
 
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
+  }
+
+  &__icon-box {
+    position: relative;
+  }
+
+  &__notification {
+    font-size: .8rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
   }
   
   &__avatar {
     height: 3.75rem;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 }
 // 
