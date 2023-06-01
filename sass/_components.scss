@@ -167,3 +167,28 @@
   color: var(--color-grey-light-4);
 }
 // 
+// GALLERY
+.gallery {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 100%;
+  }
+}
+// 
+// OVERVIEW
+.overview {
+  display: flex;
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+}
+// 
