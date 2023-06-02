@@ -24,8 +24,16 @@
   --shadow-light: 0 2rem 5rem (0, 0, 0, .06);
 }
 
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+
 html {
   font-size: 62.5%;
+
+  @media (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
