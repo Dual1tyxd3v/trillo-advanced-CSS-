@@ -424,6 +424,7 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 .review__user-date {
   font-size: 1rem;
@@ -433,5 +434,55 @@ body {
   font-size: 2.2rem;
   font-weight: 300;
   color: var(--color-primary);
+}
+
+.cta {
+  text-align: center;
+  padding: 3.5rem 0;
+}
+.cta__title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.button {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  border-radius: 1000px;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.button:focus {
+  animation: pulsate 1s infinite;
+}
+.button > * {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.button__visible {
+  padding: 2rem 7.5rem;
+}
+.button__invisible {
+  position: absolute;
+  top: -100%;
+  padding: 2rem 0;
+  left: 0;
+}
+.button:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+}
+.button:hover .button__visible {
+  transform: translateY(100%);
+}
+.button:hover .button__invisible {
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */
