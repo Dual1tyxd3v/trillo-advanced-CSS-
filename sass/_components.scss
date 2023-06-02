@@ -11,6 +11,16 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: $bp-smaller) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+
+    &:has(&__input:focus) {
+      background-color: var(--color-grey-light-3);
+    }
+  }
+
   &__input {
     width: 90%;
     border: none;
@@ -127,6 +137,13 @@
       @media (max-width: $bp-medium) {
         padding: 2rem;
       }
+
+      @media (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem .5rem;
+      }
     }
   }
 
@@ -135,6 +152,13 @@
     height: 1.75rem;
     fill: currentColor;
     margin-right: 2rem;
+
+    @media (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: .7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__item {
@@ -213,6 +237,11 @@
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
     text-transform: uppercase;
+
+    @media (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__icon-star,
@@ -246,16 +275,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__value {
     font-size: .8rem;
+    @media (max-width: $bp-small) {
+      font-size: .5rem;
+    }
   }
 }
 // 

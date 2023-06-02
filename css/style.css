@@ -79,6 +79,13 @@ body {
   height: 7rem;
   border-bottom: 1px solid var(--color-grey-light-2);
 }
+@media (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+}
 
 .content {
   display: flex;
@@ -114,6 +121,11 @@ body {
     padding: 3rem;
   }
 }
+@media (max-width: 37.5em) {
+  .details {
+    flex-direction: column;
+  }
+}
 
 .description {
   flex: 0 0 60%;
@@ -126,6 +138,12 @@ body {
   .description {
     margin-right: 3rem;
     padding: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -146,6 +164,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 31.25em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+  .search:has(.search__input:focus) {
+    background-color: var(--color-grey-light-3);
+  }
 }
 .search__input {
   width: 90%;
@@ -253,11 +281,27 @@ body {
     padding: 2rem;
   }
 }
+@media (max-width: 37.5em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+  }
+}
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
   fill: currentColor;
   margin-right: 2rem;
+}
+@media (max-width: 37.5em) {
+  .side-nav__icon {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 .side-nav__item {
   position: relative;
@@ -329,6 +373,12 @@ body {
   padding: 1.5rem 3rem;
   text-transform: uppercase;
 }
+@media (max-width: 37.5em) {
+  .overview__title {
+    font-size: 1.8rem;
+    padding: 1.25rem 2rem;
+  }
+}
 .overview__icon-star, .overview__icon-location {
   width: 1.75rem;
   height: 1.75rem;
@@ -356,13 +406,28 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 37.5em) {
+  .overview__ratings {
+    padding: 0 1.5rem;
+  }
+}
 .overview__rating {
   font-size: 2.25rem;
   font-weight: 300;
   margin-bottom: -3px;
 }
+@media (max-width: 37.5em) {
+  .overview__rating {
+    font-size: 1.8rem;
+  }
+}
 .overview__value {
   font-size: 0.8rem;
+}
+@media (max-width: 37.5em) {
+  .overview__value {
+    font-size: 0.5rem;
+  }
 }
 
 .button-inline {
